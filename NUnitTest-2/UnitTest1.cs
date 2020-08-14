@@ -11,8 +11,10 @@ namespace Unit.Test.ErrorCheck
         [SetUp]
         public void SetUp()
         {
-            driver = new ChromeDriver(".");
-            driver.Url = ("https://subline-test.artsrn.ualberta.ca/Registration/Create/54?eventItemDef=408");
+            driver = new ChromeDriver(".")
+            {
+                Url = ("https://subline-test.artsrn.ualberta.ca/Registration/Create/54?eventItemDef=408")
+            };
         }
         [Test]
         public void ErrorCheck()
