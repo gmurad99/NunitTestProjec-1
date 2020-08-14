@@ -12,7 +12,7 @@ namespace Unit.Test.ErrorCheck
         [SetUp]
         public void SetUp()
         {
-            driver = new ChromeDriver(Environment.CurrentDirectory)
+            driver = new ChromeDriver(AppDomain.CurrentDomain.BaseDirectory)
             {
                 Url = ("https://subline-test.artsrn.ualberta.ca/Registration/Create/54?eventItemDef=408")
             };
