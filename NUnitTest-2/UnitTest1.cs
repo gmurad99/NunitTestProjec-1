@@ -1,3 +1,4 @@
+using System;
 using OpenQA.Selenium;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
@@ -11,7 +12,7 @@ namespace Unit.Test.ErrorCheck
         [SetUp]
         public void SetUp()
         {
-            driver = new ChromeDriver(".")
+            driver = new ChromeDriver(Environment.CurrentDirectory)
             {
                 Url = ("https://subline-test.artsrn.ualberta.ca/Registration/Create/54?eventItemDef=408")
             };
