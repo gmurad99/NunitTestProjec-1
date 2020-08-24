@@ -22,7 +22,7 @@ namespace Unit.Test.ErrorCheck
         {
             IWebElement Opt1 = driver.FindElement(By.Id("Elements_1__ExtendedValue_0_")); // Click Opt1 & Next Button
             Opt1.Click();
-            IWebElement Next = driver.FindElement(By.ClassName("btn"));
+            IWebElement Next = driver.FindElement(By.ClassName("btn123456"));
             Next.Click();
 
             IWebElement SubTotal = driver.FindElement(By.Id("Elements_2__Value-error"));  // Checking the visible error         
